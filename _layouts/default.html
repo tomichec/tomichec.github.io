@@ -1,65 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Tomas Stary</title>
-
-    <meta charset="utf-8">
-    <meta name="Personal page" content="Personal presentation">
-    <meta name="Tomas Stary" content="SitePoint">
-
-    <link rel="stylesheet" href="/assets/css/default.css?v=1.0">
-    <link rel="stylesheet" href="/assets/fonts/stylesheet.css?v=1.0">
-    {% feed_meta %}
-    {% seo %}
-  </head>
+  {% include head.html %}
   <body>
-    <!-- Header -->
-    <div id="header">
-      <div class="container">
-	
-	<!-- Logo -->
-	<div id="logo">
-	  <h1>Tomas Stary</h1>
-	  <span class="tag">researcher in applied mathematics</span>
-	</div>
-      </div>
-
-      {% include navigation.html %}
-    </div>
+    {% include navigation.html %}
 
     <!-- main -->
     <div id="main">
-
       {{ content }}
 
-
-      <div id="back">
-
-	<p>
-	  <small>
-	    <i>
-	      Page generated on 16 November 2016.
-	    </i>
-	  </small>
-	</p>
-
-	<div id="button">
-	  <a  class="button" href="#nav">Go to the top</a>
-	</div>
-
-      </div> <!-- back -->
-
+      {% include back.html %}
     </div> <!-- /Main -->
 
-    <!-- Copyright -->
-    <div id="copyright">
-      <div class="container">
-	Copyright &copy; 2015, 2016 by Tomas Stary<br>
-	Verbatim copying and redistribution of <a href="/assets/web_TomasStary.zip">this entire page</a> are permitted provided this notice is preserved.
-      </div>
-    </div>
-
-
-
+    {% include copyright.html %}
   </body>
 </html>

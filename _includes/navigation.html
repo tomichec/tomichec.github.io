@@ -1,8 +1,20 @@
-<!-- Nav -->
-<div id="nav">
-  <ul>
-    {% for item in site.data.navigation %}
-    <li class="{% if page.url == item.link %}active{% else %}pasive{% endif %}"><a href="{{ item.link }}#nav">{{ item.name }}</a></li>
-    {% endfor %}
-  </ul>
+<!-- Header -->
+<div id="header">
+  <div class="container">
+    
+    <!-- Logo -->
+    <div id="logo">
+      <h1>Tomas Stary</h1>
+      <span class="tag">researcher in applied mathematics</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <div id="nav">
+    <ul>
+      {% for item in site.data.navigation %}
+      <li class="{% if page.url == item.link %}active{% else %}pasive{% endif %}"><a href="{{ item.link }}#nav">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
