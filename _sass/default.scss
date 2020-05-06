@@ -1,0 +1,346 @@
+body
+{
+    font-family: 'Montserrat',sans-serif;
+    padding: 0;
+    margin: 0;
+    background: rgb(215,215,215);
+    font-size: 125%;
+    line-height: 1.3;
+}
+
+a
+{
+    color: green;
+    text-decoration:none;
+}
+
+a:hover {
+	 text-decoration: underline;
+}
+
+code, a.code
+{
+    font-family: 'Share Tech Mono',monospace;
+    font-size: 1.1em;
+    letter-spacing: -1px;
+}
+
+em
+{
+    letter-spacing:1px;
+}
+
+h1, h2, h3, h4, h5
+{
+    padding: 0.4em;
+    margin: 0.5em 1.2em;
+    border-bottom: 1px dotted #FFF;
+    color: #26B;
+    letter-spacing: 2px;
+}
+
+h1
+{
+    border-bottom: 1px dashed #FFF;
+}
+
+p
+{
+    text-indent: 20px;
+}
+
+/* .container{ */
+/*     width: 800px; */
+/*     margin: 0 auto; */
+/* } */
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header
+{
+    position: relative;
+    background: url(../images/bg_memurubu.jpg) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+#header h1 
+{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#header .container
+{
+	padding: 7em 0em;
+	border-top: 3px solid;
+	border-color: rgba(255,255,255,.05);
+	color:  rgba(255,255,255,.1);
+}
+
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo h1
+{
+    font-family: 'Monoton',serif;
+    font-weight: lighter;
+    font-size: 4em;
+    color: #FFF;
+    letter-spacing: 0.15em;
+    margin: 0 0 0.125em 0;
+    border-bottom: none;
+}
+
+#logo span
+{
+    font-family: 'Courgette', cursive;
+    font-size: 2em;
+    color: #FFF;
+}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+#nav
+{
+    border-top: 3px solid;
+    border-color: rgba(255,255,255,.1);
+    font-variant: small-caps;
+    background: rgba(127,0,0,.3);
+}
+
+/* set up the navigation list */
+#nav > ul
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#nav > ul > li
+{
+    display: inline-block;
+    border-right: 3px solid;
+    border-color: rgba(255,255,255,.1);
+}
+
+#nav > ul > li:last-child
+{
+	padding-right: 0;
+	border-right: none;
+}
+
+/* highlight active menu item */
+#nav li.active
+{
+	background: rgba(0,127,255,.5);
+}
+
+/* pasive menu higlight on hover */
+#nav > ul > li.passive:hover
+{
+    background:rgba(255,127,0,.5);
+}
+
+/* set up text format of the links */
+#nav > ul > li > a,
+#nav > ul > li > span
+{
+    font-family: 'Caudex',serif;
+    display: inline-block;		/* makes the items big*/
+    padding: 1em 1em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-decoration: none;	 /* cancels underline on hover */
+    text-transform: uppercase;
+    /* font-variant: small-caps; */
+    /* font-size: 1.5em; */
+    color: #FFF;
+}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+#main
+{
+    padding: 3px;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 700px;
+    display: table;
+}
+
+#main .container{
+    display: table-row;
+}
+
+/* main part of the text */
+#content
+{
+    display: table-cell;
+    text-align: justify;
+}
+
+#content li
+{
+    padding: 0.3em;
+    text-align: left;
+}
+
+#content p{
+    margin: 0.5em 1em;
+}
+
+#featured
+{
+    display: table-cell;
+    width: 320px;
+    padding: 0 25px 0 0;
+}
+
+/* #featured h1 { */
+/*     text-align: center; */
+/*     letter-spacing: 0.05em; */
+/*     text-decoration: none; */
+/*     text-transform: uppercase; */
+/* } */
+
+/* #featured a { */
+	 /* text-decoration: none; */
+	 /* font-size: 1.2em; */
+	 /* color: #800; */
+/* } */
+
+/* #featured a:hover { */
+/* 	 text-decoration: underline; */
+/* } */
+
+/* set up the featured navigation menus */
+ul.menu {
+    margin:0;
+    padding: 0 25px 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+ul.menu > li {
+    padding: 0.2em 0.5em;
+    border-bottom: 1px solid;
+    border-color: rgba(150,150,150,.3);
+    font-size: 1.2em;
+    margin: 0;
+}
+
+ul.menu > li:hover {
+    background: rgba(150,150,150,.3);
+    /* border-radius: 10px; */
+    /* padding: 0 10px 0 0; */
+    /* text-align: center; */
+}
+
+ul.menu li > a {
+    color: #800;
+    display: block;              /* makes the whole line "click-able" */
+    text-decoration: none;	 /* cancels underline on hover */
+}
+
+ul.contact {
+    text-align:right;
+    list-style: none;
+}
+
+ul.contact > li, 
+ul.contact > li > a
+{
+    color: #800;
+}
+
+/* in the main text */
+ul.lang {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+ul.news {
+    list-style: none;
+}
+
+ul.news li p {
+    text-align: justify;
+}
+
+ul.news li p.posted {
+    letter-spacing: 1px;
+    border-top: 1px dotted #FFF;
+    font-variant: small-caps;
+    text-align: right;
+    color: #26B;
+}
+
+/* date and button to return to the top */
+#back
+{
+    border-top: 3px solid;
+    border-color: rgba(255,255,255,.1);
+}
+
+#back a:hover
+{
+    text-decoration: none;
+}
+
+#button{
+    position : fixed;
+    /* font-size : 3em; */
+    bottom : .75em;
+    right : .75em;
+}
+
+.button
+{
+    font-size: 1.1em;
+    font-family: 'Caudex',serif;
+    font-variant: small-caps;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    color: #ffffff;
+    background: rgba(127,0,0,.3);
+}
+
+.button:hover
+{
+    background:rgba(255,127,0,.5);
+}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+#copyright
+{
+    text-align: center;
+    background: rgb(50,50,50);
+    color:  rgb(150,150,150);/* rgba(255,255,255,.1); */
+}
+
+#copyright .container
+{
+    padding: 3em 0em;
+    border-top: 1px solid;
+    border-color: rgba(255,255,255,.05);
+}
+
+#copyright a
+{
+    text-decoration: none;
+    color:  rgba(255,255,255,.2);
+}
