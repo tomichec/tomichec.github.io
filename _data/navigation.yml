@@ -1,7 +1,9 @@
 - name: Home
   link: /
-- name: CV
+- name: Career
   link: /career.html
+- name: Education
+  link: /education.html
 - name: Skills
   link: /skills.html
 - name: Publications
