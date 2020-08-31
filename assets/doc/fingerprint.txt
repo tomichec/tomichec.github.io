@@ -1,0 +1,13 @@
+The following code represents my key fingerprint. You should see the
+same fingerprint after you import my key to your key management tool
+of your PGP application, e.g. for commandline use the command:
+
+$ gpg --fingerprint tomas@stary.co.uk
+
+pub   rsa4096 2020-05-08 [SC]
+      1AF8 45D6 42DA C5FE EC17  1E04 95F8 AF22 DECC 0955
+uid           [ unknown] tomas@stary.co.uk <tomas@stary.co.uk>
+sub   rsa4096 2020-05-08 [E]
+
+To verify it even more reliably feel free to ask me for the
+fingerprint through another communication channel as well.
